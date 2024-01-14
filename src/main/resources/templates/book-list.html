@@ -1,0 +1,29 @@
+ <div th:insert="navbar"></div>
+ <html xmlns:th="http://www.thymeleaf.org">
+ <body onload="makeActive('list')">
+ <div class='container'>
+  <div class='card mx-auto'>
+   <div class='card-body'>
+     <table class='table table-hover las'>
+      <thead>
+       <tr>
+        <th>Book id</th><th>Book name</th><th>Author</th>
+        <th>Number of books</th><th>Deck number</th><th>Issued To</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr th:each="book:${booklist}">
+         	<td th:text="${book.bid}"></td>
+         	<td th:text="${book.bname}"></td>
+         	<td th:text="${book.author}"></td>
+         	<td th:text="${book.number}"></td>
+         	<td th:text="${book.deckNo}"></td>
+         	<td th:text="${book.issuedTo}"></td>
+        </tr>
+      </tbody>
+      </table>
+     </div>
+   </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<div th:insert="navbar"></div>
+<html xmlns:th="http://www.thymeleaf.org">
+<body onload="makeActive('delete')">
+ <form action='delete-books'>
+  <input type='hidden' name='bid' th:value='${book.bid}'>
+  <table class='ta la' border='1'>
+   <tr style='background-color:orange;color:white;font-size:1.7vw'>
+    <td colspan="2" align="center">Book Details</td>
+   </tr>
+   <tr>
+    <th align="left">Book Id</th>
+    <td th:text="${book.bid}"></td>
+   </tr>
+   <tr>
+    <th align="left">Book Name</th>
+    <td th:text="${book.bname}"></td>
+   </tr>
+   <tr>
+    <th align="left">Book Author name</th>
+    <td th:text="${book.author}"></td>
+   </tr>
+   <tr>
+    <th align="left">Number of Books</th>
+    <td th:text="${book.number}"></td>
+   </tr>
+   <tr>
+    <th align="left">Deck Number</th>
+    <td th:text="${book.deckNo}"></td>
+   </tr>
+   <tr>
+    <th align="left">Issued To</th>
+    <td th:text="${book.issuedTo}"></td>
+   </tr>
+   <tr>
+    <td colspan="2" align="right">
+     <button class='btn btn-danger'>Confirm Delete</button>
+    </td>
+   </tr>
+  </table>
+  </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+ <div th:insert="navbar"></div>
+<html xmlns:th="http://www.thymeleaf.org">
+<body onload="makeActive('edit')">
+ <form action='get-record' method="post">
+  <table class='tab'>
+   <tr>
+    <td class='la tdp'>Enter Book id</td>
+    <td class='tdp'><input type='text' th:value='${bid}' name='bid' class='tb'></td>
+    <td class='tdp'><button class='btr' style='background-color:green'>Get Book Record</button></td>
+   </tr>
+  </table>
+  <div class='dvv'>
+   <label class='la' style='color:red' th:text="${msg}"></label>
+  </div>
+ </form> 
+</body>
+</html>
