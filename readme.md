@@ -39,3 +39,5 @@ To run the Library Management System locally, follow these steps:
    ```bash
    ./mvnw spring-boot:run
 5. Open your web browser and access the application at http://localhost:8080.
+## UI
+   ![Screenshot (363)](https://github.com/tyagiaman707/Library-Management-System/assets/95289326/ebabc8cd-8c21-4d35-920a-d22607779b27)
